@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" type="text.css" href="style.css">
+    <style>
+        .image {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 72px;
+            height: 40px;
+            border-radius: 0px;
+        }
+        
+        .image {
+            position: absolute;
+            top: 0px;
+            left: 294px;
+            width: 96px;
+            height: 40px;
+            border-radius: 0px;
+        }
+        
+        .image {
+            position: absolute;
+            top: 551px;
+            left: 0px;
+            width: 390px;
+            height: 293px;
+            border-radius: 0px;
+        }
+        
+        .button {
+            position: absolute;
+            top: 418px;
+            left: 24px;
+            width: 342px;
+            height: 52px;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Manrope;
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 400;
+            color: #FFFFFFFF;
+            /* white */
+            background: #6D31EDFF;
+            /* primary-500 */
+            opacity: 1;
+            border: none;
+            border-radius: 26px;
+        }
+        
+        .button:hover {
+            color: #FFFFFFFF;
+            background: #5113D7FF;
+        }
+        
+        .button:hover:active {
+            color: #FFFFFFFF;
+            background: #3F0EA6FF;
+        }
+        
+        .button:disabled {
+            opacity: 0.4;
+        }
+        
+        .textbox {
+            position: absolute;
+            top: 252px;
+            left: 24px;
+            opacity: 1;
+        }
+        
+        .textbox input {
+            width: 342px;
+            height: 52px;
+            padding-left: 0px;
+            padding-right: 20px;
+            font-family: Manrope;
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 400;
+            background: #00000000;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            border-width: 0px;
+            box-shadow: 0 1px 0 #bdc1ca;
+            outline: none;
+        }
+        
+        .textbox input:hover {
+            color: #BDC1CAFF;
+            box-shadow: 0 1px 0 #bdc1ca;
+        }
+        
+        .textbox input:focused {
+            color: #BDC1CAFF;
+            box-shadow: 0 1px 0 #bdc1ca;
+        }
+        
+        .textbox input:disabled {
+            color: #BDC1CAFF;
+            box-shadow: 0 1px 0 #bdc1ca;
+        }
+        
+        .textbox :disabled+.icon,
+        .textbox :disabled+.icon+.icon {
+            fill: #171A1FFF;
+        }
+        
+        .text {
+            position: absolute;
+            top: 328px;
+            left: 24px;
+            width: 342px;
+            font-family: Manrope;
+            font-size: 14px;
+            line-height: 22px;
+            font-weight: 400;
+            color: #171A1FFF;
+        }
+        
+        .textbox {
+            position: absolute;
+            top: 252px;
+            left: 24px;
+            opacity: 1;
+        }
+        
+        .textbox input {
+            width: 342px;
+            height: 52px;
+            padding-left: 0px;
+            padding-right: 20px;
+            font-family: Manrope;
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 400;
+            background: #00000000;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            border-width: 0px;
+            box-shadow: 0 1px 0 #bdc1ca;
+            outline: none;
+        }
+        
+        .textbox input:hover {
+            color: #BDC1CAFF;
+            box-shadow: 0 1px 0 #bdc1ca;
+        }
+        
+        .textbox input:focused {
+            color: #BDC1CAFF;
+            box-shadow: 0 1px 0 #bdc1ca;
+        }
+        
+        .textbox input:disabled {
+            color: #BDC1CAFF;
+            box-shadow: 0 1px 0 #bdc1ca;
+        }
+        
+        .textbox :disabled+.icon,
+        .textbox :disabled+.icon+.icon {
+            fill: #171A1FFF;
+        }
+        
+        .text {
+            position: absolute;
+            top: 128px;
+            left: 24px;
+            width: 342px;
+            font-family: Lexend;
+            font-size: 36px;
+            line-height: 50px;
+            font-weight: 700;
+            color: #171A1FFF;
+        }
+        
+        .button {
+            position: absolute;
+            top: 60px;
+            left: 24px;
+            width: 44px;
+            height: 44px;
+            padding: 0 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #323743FF;
+            background: #FFFFFFFF;
+            opacity: 1;
+            border-radius: 8px;
+            border-width: 1px;
+            border-color: #DEE1E6FF;
+            border-style: solid;
+            gap: 0px;
+        }
+        
+        .button .icon {
+            width: 20px;
+            height: 20px;
+            fill: #323743FF;
+        }
+        
+        .button:hover {
+            color: #262A33FF;
+            background: #FFFFFFFF;
+        }
+        
+        .button:hover:active {
+            color: #171A1FFF;
+            background: #FFFFFFFF;
+        }
+        
+        .button:disabled {
+            opacity: 0.4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="button">
+        <div class="two">
+            <h4 class="sign">SIGN IN</h4>
+            <button>
+                "next"
+            </button>
+            <p class="btn">
+                <button><a href="web.html">OK</a></button>
+            </p>
+            <div class="link">
+                <a class="link1" href="forgot password css.html">forgotpasscode</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
